@@ -98,7 +98,7 @@ void btn_2_task(void *p) {
 
     int delay = 0;
     while (true) {
-        if (xSemaphoreTake(xSemaphore_r, pdMS_TO_TICKS(500)) == pdTRUE) {
+        if (xSemaphoreTake(xSemaphore_g, pdMS_TO_TICKS(500)) == pdTRUE) {
             if (delay < 1000) {
                 delay += 100;
             } else {
